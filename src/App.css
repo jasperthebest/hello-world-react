@@ -1,0 +1,242 @@
+.transitionRegular, a {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.appear, input[type="text"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none; }
+
+.backface {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* Common css */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row .center-block {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+.fL {
+  float: left; }
+
+.fR {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+a, a:focus, input:focus, textarea:focus, select:focus {
+  outline: none;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+figure {
+  margin: 0; }
+
+dl, dt, dd {
+  margin: 0; }
+
+blockquote, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+textarea {
+  resize: none; }
+
+input[type="text"], input[type="password"], textarea {
+  border-radius: 0; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1240px; }
+
+/* Basic setup #bdbdbd */
+html {
+  background-color: #636363; }
+
+body {
+  background-color: #636363;
+  color: #FFF;
+  font: 400 14px/26px "Roboto", sans-serif; }
+
+.coverBG {
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .coverBG.topCover {
+    background-position: center top; }
+
+h1 {
+  color: #FFF;
+  font: 700 30px/40px "Roboto", sans-serif;
+  padding-bottom: 15px; }
+
+h2 {
+  color: #FFF;
+  font: 700 26px/34px "Roboto", sans-serif;
+  padding-bottom: 15px; }
+
+h3 {
+  color: #FFF;
+  font: 700 24px/30px "Roboto", sans-serif;
+  padding-bottom: 10px; }
+
+h4 {
+  color: #FFF;
+  font: 700 20px/26px "Roboto", sans-serif;
+  padding-bottom: 10px; }
+
+h5 {
+  color: #FFF;
+  font: 700 18px/24px "Roboto", sans-serif;
+  padding-bottom: 10px; }
+
+h6 {
+  color: #FFF;
+  font: 700 16px/20px "Roboto", sans-serif;
+  padding-bottom: 10px; }
+
+p {
+  padding-bottom: 25px; }
+
+a {
+  color: #FFF; }
+
+::-moz-selection {
+  color: #FFF;
+  background: #f06457; }
+
+::selection {
+  color: #FFF;
+  background: #f06457; }
+
+/* CSS Code */
+.App {
+  background-color: #151515;
+  margin: 0 auto;
+  width: 400px; }
+  .App h1 {
+    background-color: #16365d;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: center; }
+
+.cardOne {
+  padding: 0 15px 15px; }
+  .cardOne > div {
+    background: linear-gradient(to bottom, #303030 0%, #222222 100%);
+    padding: 15px 20px; }
+    .cardOne > div .cardTitle {
+      padding-bottom: 15px;
+      position: relative; }
+      .cardOne > div .cardTitle h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 0; }
+      .cardOne > div .cardTitle span {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: capitalize; }
+      .cardOne > div .cardTitle .iconDate {
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: right;
+        width: 80px; }
+        .cardOne > div .cardTitle .iconDate span {
+          display: block; }
+    .cardOne > div .cardDetail {
+      display: flex; }
+      .cardOne > div .cardDetail > div {
+        width: 33.33%; }
+      .cardOne > div .cardDetail h6 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 0; }
+      .cardOne > div .cardDetail span {
+        font-weight: 500; }
+        .cardOne > div .cardDetail span.green {
+          color: #22b571; }
+
+.advertImg {
+  padding: 0 15px 20px; }
+  .advertImg img {
+    width: 100%; }
+
+.containFilter {
+  padding-bottom: 20px; }
+
+.filterData {
+  background-color: #102d4f;
+  display: flex; }
+  .filterData li {
+    border-bottom: 4px solid rgba(0, 138, 229, 0);
+    cursor: pointer;
+    padding: 14px 10px 10px;
+    text-align: center;
+    width: 33.33%;
+    transition: all 0.3s linear; }
+    .filterData li.active {
+      border-bottom: 4px solid #008ae5; }
+    .filterData li span {
+      display: block; }
+
+.bottomFilter {
+  background-color: #141414;
+  border-top: 1px solid #3f3f3f;
+  display: flex; }
+  .bottomFilter > div {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    width: 50%; }
+    .bottomFilter > div span {
+      color: rgba(255, 255, 255, 0.5);
+      display: block;
+      padding-top: 3px; }

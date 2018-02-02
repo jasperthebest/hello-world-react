@@ -1,0 +1,82 @@
+[{
+    "name": "Weekday Challenge",
+    "tournament": ["epl", "ipl"],
+    "startTime": "2018-02-08T11:30:00.000Z",
+    "endTime": "2018-02-10T11:30:00.000Z",
+    "isJoined": 1,
+    "prizes": 20,
+    "sportName": ["football", "cricket"],
+    "games" : 3
+}, {
+    "name": "Laliga Fever",
+    "tournament": ["laliga"],
+    "startTime": "2018-01-25T11:30:00.000Z",
+    "endTime": "2018-01-30T11:30:00.000Z",
+    "isJoined": 1,
+    "prizes": 200,
+    "sportName": "football",
+    "games" : 3
+}, {
+    "name": "Epl Fever",
+    "tournament": ["epl"],
+    "startTime": "2018-01-30T11:30:00.000Z",
+    "endTime": "2018-01-30T18:30:00.000Z",
+    "isJoined": 1,
+    "prizes": 2000,
+    "sportName": "football",
+    "games" : 3
+}, {
+    "name": "Ipl Fever",
+    "tournament": ["ipl"],
+    "startTime": "2018-02-30T11:30:00.000Z",
+    "endTime": "2018-03-30T11:30:00.000Z",
+    "isJoined": 1,
+    "prizes": 20000,
+    "sportName": "cricket",
+    "games" : 3
+}, {
+    "name": "Weekend Challenge",
+    "tournament": ["laliga", "ipl"],
+    "startTime": "2018-2-10T11:30:00.000Z",
+    "endTime": "2018-2-20T11:30:00.000Z",
+    "isJoined": 0,
+    "prizes": 22222,
+    "sportName": ["football", "cricket"],
+    "games" : 3
+}, {
+    "name": "BBL Challenge",
+    "tournament": ["bbl"],
+    "startTime": "2017-02-30T11:30:00.000Z",
+    "endTime": "2018-03-30T11:30:00.000Z",
+    "isJoined": 0,
+    "prizes": 2222,
+    "sportName": "cricket",
+    "games" : 2
+}, {
+    "name": "Laliga Challenge",
+    "tournament": ["laliga"],
+    "startTime": "2018-2-30T11:30:00.000Z",
+    "endTime": "2018-10-30T11:30:00.000Z",
+    "isJoined": 0,
+    "prizes": 222,
+    "sportName": "football",
+    "games" : 3
+}, {
+    "name": "Epl Challenge",
+    "tournament": ["epl"],
+    "startTime": "2018-03-10T11:30:00.000Z",
+    "endTime": "2018-03-10T16:30:00.000Z",
+    "isJoined": 0,
+    "prizes": 22,
+    "sportName": "football",
+    "games" : 4
+}, {
+    "name": "Ipl Challenge",
+    "tournament": ["ipl"],
+    "startTime": "2017-03-10T11:30:00.000Z",
+    "endTime": "2018-03-11T11:30:00.000Z",
+    "isJoined": 1,
+    "prizes": 2,
+    "sportName": "cricket",
+    "games" : 3
+}]

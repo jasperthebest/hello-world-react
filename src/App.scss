@@ -1,0 +1,103 @@
+@import "customvariable.scss";
+
+/* Common css */
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:0px;
+  padding-right:0px;
+}
+.row .center-block {
+  padding-left:15px;
+  padding-right:15px;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.fL { float:left; }
+.fR { float:right; }
+.text-center { text-align:center; }
+.text-right { text-align:right; }
+.text-left { text-align:left; }
+.text-uppercase { text-transform:uppercase; }
+a, a:focus, input:focus, textarea:focus, select:focus { outline:none; text-decoration:none;}
+img { max-width:100%; vertical-align:middle;}
+figure {margin:0;}
+dl, dt, dd {margin:0;}
+blockquote, ul, li, ol, h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
+li { list-style:none; }
+textarea { resize: none; }
+input[type="text"], input[type="password"], textarea { border-radius: 0; @extend .appear; }
+.container { margin: 0 auto; padding: 0 15px; width: 1240px; }
+
+/* Basic setup #bdbdbd */
+html { background-color: #636363; }
+body { background-color: #636363; color: $white; font: 400 14px/26px $font; }
+.coverBG { background-size: cover; background-repeat: no-repeat; 
+  &.topCover { background-position: center top; }
+}
+h1 { color: $white; font: 700 30px/40px $font; padding-bottom: 15px; }
+h2 { color: $white; font: 700 26px/34px $font; padding-bottom: 15px; }
+h3 { color: $white; font: 700 24px/30px $font; padding-bottom: 10px; }
+h4 { color: $white; font: 700 20px/26px $font; padding-bottom: 10px; }
+h5 { color: $white; font: 700 18px/24px $font; padding-bottom: 10px; }
+h6 { color: $white; font: 700 16px/20px $font; padding-bottom: 10px; }
+p { padding-bottom: 25px; }
+a { color: $white; @extend .transitionRegular; }
+::-moz-selection { color: $white; background: #f06457; }
+::selection { color: $white; background: #f06457; }
+
+/* CSS Code */
+.App { background-color: #151515; margin: 0 auto; width: 400px; 
+  h1 { background-color: #16365d; color: $white; font-weight: 400; font-size: 20px; padding: 10px 15px; text-align: center; }
+}
+.cardOne { padding: 0 15px 15px;
+  > div { background: linear-gradient(to bottom, rgba(48,48,48,1) 0%, rgba(34,34,34,1) 100%); padding: 15px 20px; 
+    .cardTitle { padding-bottom: 15px; position: relative;
+      h3 { font-size: 18px; font-weight: 400; padding-bottom: 0; }
+      span { color: rgba(255,255,255,0.7); text-transform: capitalize; }
+      .iconDate { position: absolute; right: 0; top: 0; text-align: right; width: 80px; 
+        span { display: block; }
+      }
+    }
+    .cardDetail { display: flex;
+      > div { width: 33.33%; }
+      h6 { color: rgba(255,255,255,0.7); font-size: 13px; font-weight: 400; text-transform: uppercase; padding-bottom: 0; }
+      span { font-weight: 500;
+        &.green { color: #22b571; }
+      }
+    }
+  }
+}
+.advertImg { padding: 0 15px 20px; 
+  img { width: 100%; }
+}
+.containFilter { padding-bottom: 20px; }
+.filterData { background-color: #102d4f; display: flex;
+  li { border-bottom: 4px solid rgba(0, 138, 229, 0); cursor: pointer; padding: 14px 10px 10px; text-align: center; width: 33.33%; transition: all 0.3s linear;
+    &.active { border-bottom: 4px solid rgba(0, 138, 229, 1); }
+    span { display: block; }
+  }
+}
+.bottomFilter { background-color: #141414; border-top: 1px solid #3f3f3f; display: flex; 
+  > div { cursor: pointer; padding: 10px; text-align: center; width: 50%; 
+    span { color: rgba(255,255,255,0.5); display: block; padding-top: 3px; }
+  }
+}
